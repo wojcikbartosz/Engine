@@ -1,10 +1,4 @@
-//============================================================================
-// Name        : Uart.cpp
-// Author      : Fulguryt
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+
 
 #include <iostream>
 #include "uart_manager.hpp"
@@ -169,7 +163,7 @@ int main()
 
 			fprintf( gnuStream, "plot [0:50][0:100] \"%s\" u 1:2 w lp title \"T0\", \"%s\" u 1:3 w lp title \"T1\"\n",dataSet,dataSet);
 			//fprintf( gnuStream, "plot \"%s\" u 1:3 w lp title \"T1\"\n",dataSet);
-			fprintf( gnuStream1, "plot [0:50][0:5]\"%s\" u 1:4 w lp title \"P0\"\n",dataSet);
+			fprintf( gnuStream1, "plot [0:50][-0.2:2.5]\"%s\" u 1:4 w lp title \"P0\"\n",dataSet);
 			fprintf( gnuStream2, "plot [0:50][0:3.3]\"%s\" u 1:5 w lp title \"R0\"\n",dataSet);
 			fflush( gnuStream );
 			fflush( gnuStream1 );
