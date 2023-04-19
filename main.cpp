@@ -19,7 +19,7 @@ using namespace std;
 string Scp(string sign, string measurements)
 {
 	string value;
-	int scp = measurements.find(sign)+3;
+	long unsigned int scp = measurements.find(sign)+3;
 	while(measurements.at(scp) != '|' && measurements.at(scp) != '\n')
 	{
 		value+=measurements.at(scp++);
